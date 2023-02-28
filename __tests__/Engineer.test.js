@@ -21,13 +21,13 @@ test('can set name artibute on the engineer object', () => {
 
 test('can set email artibute on the engineer object', () => {
     const email = "javad@test"
-    const engineer = new Engineer(2, "javad", email)
+    const engineer = new Engineer(2, "javad", 'javad@test', 'JDastan')
     expect(engineer.email).toBe(email)
 })
 
 test('can set gitHub artibute on the engineer object', () => {
     const gitHub = "JDastan"
-    const engineer = new Engineer(2, "javad", gitHub)
+    const engineer = new Engineer(2, "javad", 'javad@test', 'JDastan')
     expect(engineer.gitHub).toBe(gitHub)
 })
 
@@ -45,12 +45,12 @@ test('can get name by calling getName()', () => {
 
 test('can get email by calling getEmail()', () => {
     const email = "javad@test"
-    const engineer = new Engineer(2, "javad", email)
+    const engineer = new Engineer(2, "javad", 'javad@test', 'JDastan')
     expect(engineer.getEmail()).toBe(email)
 })
 
 test('can get gitHub by calling getGitHub()', () => {
     const gitHub = "JDastan"
-    const engineer = new Engineer(2, "javad", gitHub)
+    const engineer = new Engineer(2, "javad", 'javad@test', 'JDastan')
     expect(engineer.getGitHub()).toBe(gitHub)
 })

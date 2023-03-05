@@ -23,11 +23,13 @@ Please see below guidelines the project on your local machine in order to be abl
 
 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
     ![alt text](assets/images/screenshot.png)
-    ```
+    `
+![alt text](.assets/image/htmlpreview.png)
+
+
 
  https://github.com/ZDastan/team-profile-generator
 

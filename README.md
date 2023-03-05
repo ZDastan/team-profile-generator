@@ -21,13 +21,10 @@ Please see below guidelines the project on your local machine in order to be abl
 
 ## Usage
 
+![alt text](./assets/image/htmlpreview.png)
 
 
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    `
-![alt text](.assets/image/htmlpreview.png)
 
 
 

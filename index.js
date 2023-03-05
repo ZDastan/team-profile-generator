@@ -28,31 +28,16 @@ function generateTeam () {
             }else if(choices.employeeType === 'Intern'){
                 createIntern()
             }else if(choices.employeeType === 'none'){
-                function makeTeam(team){
-                            //fs.mkdirSync(path.resolve(__dirname, 'dist'))
+                
                             console.log(team)
-                    fs.writeFileSync(path.join('dist', generateHTML(team), 'utf-8'))
-                        }
-              
-                // const pageHtml = generateHTML(this.getTeamArray());
-                // fs.writeFile('.dist/index.htm', pageHtml, err =>{
-                //     if(err) throw new Error(err);
-
-                //     console.log('Page created!');
-                // })
+                    fs.writeFileSync(path.join(__dirname,'dist/index.html'), generateHTML(team))
+                 
             }
-            // {
-            //     makeTeam(team)
-            // }
+           
 
         })
     }
-//     function makeTeam(team){
-//         //fs.mkdirSync(path.resolve(__dirname, 'dist'))
-//         console.log(team)
-// fs.writeFileSync(path.join('dist', generateHTML(team), 'utf-8'))
-//     }
-// 
+
     function createEngineer(){
         inquirer.prompt (
             [
@@ -81,7 +66,7 @@ function generateTeam () {
                         },
                     ]   
         ).then((engineer)=>{
-            const eng = new Engineer(engineer.id, engineer.name, engineer.email, engineer.officeNumber)
+            const eng = new Engineer(engineer.id, engineer.name, engineer.email, engineer.gitHub)
             team.push(eng)
             generateTeam()
         })
@@ -154,7 +139,7 @@ function generateTeam () {
                     },
                 ]   
     ).then((intern)=>{
-        const int = new Intern(intern.id, intern.name, intern.email, intern.officeNumber)
+        const int = new Intern(intern.id, intern.name, intern.email, intern.school)
         team.push(int)
         generateTeam()
     })

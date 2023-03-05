@@ -1,7 +1,6 @@
 # Team Profile Generator
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - This was great project to be part of. -I build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 - I had a litle bit problem to generate html page.
@@ -22,11 +21,14 @@ Please see below guidelines the project on your local machine in order to be abl
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
+
+ https://github.com/ZDastan/team-profile-generator
+
 

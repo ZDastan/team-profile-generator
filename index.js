@@ -27,17 +27,31 @@ function generateTeam () {
                 createManager()
             }else if(choices.employeeType === 'Intern'){
                 createIntern()
-            }else{
-                makeTeam(team)
+            }else if(choices.employeeType === 'none'){
+                function makeTeam(team){
+                            //fs.mkdirSync(path.resolve(__dirname, 'dist'))
+                            console.log(team)
+                    fs.writeFileSync(path.join('dist', generateHTML(team), 'utf-8'))
+                        }
+              
+                // const pageHtml = generateHTML(this.getTeamArray());
+                // fs.writeFile('.dist/index.htm', pageHtml, err =>{
+                //     if(err) throw new Error(err);
+
+                //     console.log('Page created!');
+                // })
             }
+            // {
+            //     makeTeam(team)
+            // }
 
         })
     }
-    function makeTeam(team){
-        //fs.mkdirSync(path.resolve(__dirname, 'dist'))
-        console.log(team)
-fs.writeFileSync(path.join('dist', generateHTML(team), 'utf-8'))
-    }
+//     function makeTeam(team){
+//         //fs.mkdirSync(path.resolve(__dirname, 'dist'))
+//         console.log(team)
+// fs.writeFileSync(path.join('dist', generateHTML(team), 'utf-8'))
+//     }
 // 
     function createEngineer(){
         inquirer.prompt (

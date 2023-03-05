@@ -102,7 +102,7 @@ function generateTeam () {
                     },
                 ]   
     ).then((manager)=>{
-        const mng = new Manager(manager.id, manager.name, manager.email, manager.officeNumber)
+        const mng = new Manager(manager.id, manager.name, manager.email, manager.OfficeNumber)
         team.push(mng)
         generateTeam()
     })
